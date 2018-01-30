@@ -1,5 +1,5 @@
-var Airport = function() {
-  this._hanger = [];
+var Airport = function(hanger = []) {
+  this._hanger = hanger;
 };
 
 Airport.prototype.hanger = function() {
@@ -7,9 +7,7 @@ Airport.prototype.hanger = function() {
 };
 
 Airport.prototype.receive = function(plane) {
-  // check if plane is a plane first?
   this._hanger.push(plane);
-  // if not, throw an error?
 };
 
 Airport.prototype.dispatch = function(plane) {

@@ -1,21 +1,13 @@
-var Plane = function(){
-  this._location = null;
+var Plane = function(location = null){
+  this._location = location;
 };
 
 Plane.prototype.land = function(destination) {
-  if (destination instanceof Airport){
-    this._location = destination;
-  } else {
-    // throw an error
-  };
+  this._location = destination;
 };
 
 Plane.prototype.takeOff = function() {
-  if (this._location instanceof Airport){
-    this._location = null;
-  } else {
-    // throw an error
-  };
+  this._location = null;
 };
 
 Plane.prototype.location = function() {

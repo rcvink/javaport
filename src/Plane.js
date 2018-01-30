@@ -5,19 +5,16 @@ var Plane = function(){
 Plane.prototype.land = function(destination) {
   if (destination instanceof Airport){
     this._location = destination;
-    destination.receive(this);
-    return (true);
   } else {
-    return (false);
+    // throw an error
   };
 };
 
 Plane.prototype.takeOff = function() {
   if (this._location instanceof Airport){
     this._location = null;
-    return true;
   } else {
-    return (false);
+    // throw an error
   };
 };
 

@@ -14,7 +14,7 @@ describe('AirTrafficControl', function() {
 
     it('instructs the airport to receive', function() {
       airTrafficControl.orderLanding(plane, airport);
-      expect(airport.receive).toHaveBeenCalled()
+      expect(airport.receive).toHaveBeenCalled();
     });
   });
 

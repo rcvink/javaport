@@ -1,7 +1,8 @@
 describe('Airport', function(){
+  var plane;
+
   beforeEach(function(){
     airport = new Airport();
-    plane = new Plane();
   });
 
   describe('hanger', function() {
@@ -24,5 +25,4 @@ describe('Airport', function(){
       expect(airport.hanger()).toEqual([]);
     });
   });
-
 });
